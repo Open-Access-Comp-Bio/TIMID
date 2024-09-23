@@ -1,5 +1,5 @@
 #Ensembl to NCBI Accession Codes for homo sapiens. 
-#This is just my first attempt at this kind of project and am only aiming to print out the ID's for NCBI. 
+#Goal: To take in a list of Ensembl IDs and obtain the gene name and NCBI accession codes and append these to a pandas dataframe.
 #Example: ENSG00000012048 
 import requests
 import re
@@ -16,7 +16,6 @@ user_input = input("Please enter Ensembl IDs separated by a space \n") #delimite
 entries = user_input.split()
 
 print("String List: ", entries)
-
 ncbi_ids = []
 
 #For future scripts, will try to have this be a list or data frame column to loop through 
